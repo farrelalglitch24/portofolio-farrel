@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Keahlian — Farrel Al Farizi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="sidebar-logo">
+        <span class="dot"></span>
+        <div>root@farrel<small>Network &amp; Server Dashboard</small></div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+      <a href="index.html"><span class="ic">🏠</span>Dashboard</a>
+      <a href="skills.html" class="active"><span class="ic">📊</span>Keahlian</a>
+      <a href="projects.html"><span class="ic">🗂️</span>Proyek</a>
+      <a href="gallery.html"><span class="ic">🖼️</span>Galeri</a>
+      <a href="contact.html"><span class="ic">✉️</span>Kontak</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="status"><span class="dot-s"></span>SERVER ONLINE — 99.9%</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="crumb">farrel@portofolio:<b>~</b>$ <span>skills --list</span></div>
+      <div class="spacer"></div>
+      <div class="live"><span class="blink"></span>LIVE MONITORING</div>
+    </div>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section-pad" id="teknologi">
+      <div class="container">
+        <div class="eyebrow">$ skills --list</div>
+        <h2 class="section-title reveal">Dashboard Keahlian</h2>
+        <p class="section-sub reveal">Kompetensi bidang jaringan, server, serta soft skill yang telah dikembangkan selama pendidikan dan pengalaman organisasi.</p>
+
+        <!-- server monitor summary -->
+        <div class="monitor reveal" style="margin-bottom:40px;">
+          <div class="monitor-head"><span class="t-dot r"></span><span class="t-dot y"></span><span class="t-dot g"></span><span class="t-title">root@farrel ~/skill-level</span></div>
+          <div class="monitor-body">
+            <div class="metric-row"><span class="m-name">NETWORK</span><div class="m-bar"><i style="width:80%"></i></div><span class="m-val">80%</span></div>
+            <div class="metric-row"><span class="m-name">SERVER</span><div class="m-bar"><i style="width:72%"></i></div><span class="m-val">72%</span></div>
+            <div class="metric-row"><span class="m-name">MONITOR</span><div class="m-bar"><i style="width:88%"></i></div><span class="m-val">88%</span></div>
+            <div class="metric-row"><span class="m-name">SECURITY</span><div class="m-bar"><i style="width:35%"></i></div><span class="m-val">35%</span></div>
+            <div class="uptime-line"><span>level.next = "meningkat terus"</span><span class="u-val">growth: 100%</span></div>
+          </div>
+        </div>
+
+        <div class="skill-cats">
+          <div class="skill-card reveal">
+            <div class="cat-head"><div class="icon">🌐</div><h4>NETWORKING</h4></div>
+            <div class="skill-item"><div class="top-row"><span>TCP/IP &amp; Subnetting</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Routing &amp; Switching</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>VLAN &amp; VPN</span><span>65%</span></div><div class="bar-track"><div class="bar-fill" data-w="65"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="cat-head"><div class="icon">🖥️</div><h4>SERVER &amp; OS</h4></div>
+            <div class="skill-item"><div class="top-row"><span>Linux Server (Ubuntu &amp; Debian)</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Windows Server</span><span>30%</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Virtualisasi (Proxmox/VMware)</span><span>40%</span></div><div class="bar-track"><div class="bar-fill" data-w="40"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="cat-head"><div class="icon">🛡️</div><h4>SECURITY</h4></div>
+            <div class="skill-item"><div class="top-row"><span>Firewall Configuration</span><span>30%</span></div><div class="bar-track"><div class="bar-fill" data-w="30"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Network Monitoring</span><span>88%</span></div><div class="bar-track"><div class="bar-fill" data-w="88"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Dasar Keamanan Siber</span><span>20%</span></div><div class="bar-track"><div class="bar-fill" data-w="20"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="cat-head"><div class="icon">🧑‍🔧</div><h4>NETWORK INSTALLATION</h4></div>
+            <div class="skill-item"><div class="top-row"><span>Pemasangan Wifi Pelanggan</span><span>75%</span></div><div class="bar-track"><div class="bar-fill" data-w="75"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Fiber To The Home</span><span>50%</span></div><div class="bar-track"><div class="bar-fill" data-w="50"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Konfigurasi Perangkat</span><span>80%</span></div><div class="bar-track"><div class="bar-fill" data-w="80"></div></div></div>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="cat-head"><div class="icon">👤</div><h4>SOFT SKILL</h4></div>
+            <div class="skill-item"><div class="top-row"><span>Public Speaking</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Teamwork</span><span>90%</span></div><div class="bar-track"><div class="bar-fill" data-w="90"></div></div></div>
+            <div class="skill-item"><div class="top-row"><span>Leadership</span><span>85%</span></div><div class="bar-track"><div class="bar-fill" data-w="85"></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ TOOLS ============ -->
+    <section class="section-pad" id="tools">
+      <div class="container">
+        <div class="eyebrow">$ which tools</div>
+        <h2 class="section-title reveal">Tools yang Dipakai</h2>
+        <p class="section-sub reveal">Perangkat lunak dan platform yang biasa digunakan dalam pekerjaan sehari-hari.</p>
+
+        <div class="tools-grid">
+          <div class="tool-badge reveal"><div class="glyph">📡</div><div class="name">MikroTik</div><div class="tag">RouterOS</div></div>
+          <div class="tool-badge reveal"><div class="glyph">🔀</div><div class="name">Cisco Packet Tracer</div><div class="tag">Simulasi</div></div>
+          <div class="tool-badge reveal"><div class="glyph">🔍</div><div class="name">WinSCP</div><div class="tag">File Transfer</div></div>
+          <div class="tool-badge reveal"><div class="glyph">☁️</div><div class="name">Proxmox VE</div><div class="tag">Virtualisasi</div></div>
+          <div class="tool-badge reveal"><div class="glyph">🐧</div><div class="name">Ubuntu Server</div><div class="tag">Linux OS</div></div>
+          <div class="tool-badge reveal"><div class="glyph">🔑</div><div class="name">PuTTY</div><div class="tag">SSH Client</div></div>
+          <div class="tool-badge reveal"><div class="glyph">🗄️</div><div class="name">Cockpit</div><div class="tag">Server Monitor</div></div>
+          <div class="tool-badge reveal"><div class="glyph">📦</div><div class="name">Nextcloud</div><div class="tag">Cloud Storage</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERTIFIKASI ============ -->
+    <section class="section-pad" id="sertifikasi" style="padding-top:0;">
+      <div class="container">
+        <div class="eyebrow">$ cat /etc/certificates</div>
+        <h2 class="section-title reveal">Sertifikat &amp; Pelatihan</h2>
+        <p class="section-sub reveal">Sertifikasi yang mendukung kompetensi di bidang jaringan, Linux, dan teknologi.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🏅</div><div class="stat-tag">NATIONAL</div></div>
+            <div class="stat-num" style="font-size:1rem;line-height:1.4;">Juara Harapan 1</div>
+            <div class="stat-lbl" style="text-transform:none;font-size:.78rem;">Lomba Networking Tingkat Nasional</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🐳</div><div class="stat-tag">DOCKER</div></div>
+            <div class="stat-num" style="font-size:1rem;line-height:1.4;">Pelatihan Docker</div>
+            <div class="stat-lbl" style="text-transform:none;font-size:.78rem;">Fundamental container &amp; deployment</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🐧</div><div class="stat-tag">LINUX</div></div>
+            <div class="stat-num" style="font-size:1rem;line-height:1.4;">Pelatihan Linux</div>
+            <div class="stat-lbl" style="text-transform:none;font-size:.78rem;">Pelatihan Linux Adinusa</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🎓</div><div class="stat-tag">EVENT</div></div>
+            <div class="stat-num" style="font-size:1rem;line-height:1.4;">EJLS &amp; Olimpiade</div>
+            <div class="stat-lbl" style="text-transform:none;font-size:.78rem;">Seminar &amp; kompetisi akademik</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="school-badge">TLKM</div>
+        <div>
+          <div class="school-name">SMK TELKOM SIDOARJO</div>
+          <div class="school-sub">Kompetensi Keahlian: Teknik Jaringan Akses Telekomunikasi</div>
+        </div>
+        <button class="back-top" id="backTop">↑ kembali ke atas</button>
+        <div class="copyright">© 2026 Farrel Al Farizi — Network &amp; Server Monitoring Dashboard</div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>

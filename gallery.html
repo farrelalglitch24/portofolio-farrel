@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri — Farrel Al Farizi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="sidebar-logo">
+        <span class="dot"></span>
+        <div>root@farrel<small>Network &amp; Server Dashboard</small></div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+      <a href="index.html"><span class="ic">🏠</span>Dashboard</a>
+      <a href="skills.html"><span class="ic">📊</span>Keahlian</a>
+      <a href="projects.html"><span class="ic">🗂️</span>Proyek</a>
+      <a href="gallery.html" class="active"><span class="ic">🖼️</span>Galeri</a>
+      <a href="contact.html"><span class="ic">✉️</span>Kontak</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="status"><span class="dot-s"></span>SERVER ONLINE — 99.9%</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="crumb">farrel@portofolio:<b>~</b>$ <span>ls ./galeri</span></div>
+      <div class="spacer"></div>
+      <div class="live"><span class="blink"></span>LIVE MONITORING</div>
+    </div>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section-pad" id="galeri">
+      <div class="container">
+        <div class="eyebrow">$ ls ./galeri</div>
+        <h2 class="section-title reveal">Dashboard Galeri</h2>
+        <p class="section-sub reveal">Dokumentasi visual proyek, kegiatan, dan sertifikat. Klik gambar untuk melihat detail.</p>
+
+        <div class="filter-row reveal">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="projek">Projek</button>
+          <button class="filter-btn" data-filter="pengalaman">Pengalaman</button>
+          <button class="filter-btn" data-filter="sertifikat">Sertifikat</button>
+        </div>
+
+        <div class="gallery-grid" id="galleryGrid">
+          <div class="gal-item reveal" data-cat="projek" data-title="Web Perusahaan" data-desc="Pengembangan web perusahaan jaringan." data-img="web perusahaan.png">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="web perusahaan.png" alt="Web Perusahaan" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Web Perusahaan Jaringan</div>
+          </div>
+          <div class="gal-item reveal" data-cat="projek" data-title="Dashboard Monitoring IOT &amp; AI" data-desc="Tampilan dashboard klasifikasi data." data-img="projek iot.png">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="projek iot.png" alt="Projek IOT" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Dashboard Monitoring IOT &amp; AI</div>
+          </div>
+          <div class="gal-item reveal" data-cat="projek" data-title="PKL di CV Seruni Jaya Media" data-desc="Dokumentasi hasil kerja pemasangan kabel." data-img="projek pemasangan.png">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="projek pemasangan.png" alt="Projek Pemasangan" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Dokumentasi Pemasangan Kabel FTTH</div>
+          </div>
+          <div class="gal-item reveal" data-cat="projek" data-title="Projek Digital Talent Program" data-desc="Projek instalasi jaringan." data-img="projek instalasi.png">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="projek instalasi.png" alt="Projek Instalasi" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Projek Instalasi Jaringan</div>
+          </div>
+          <div class="gal-item reveal" data-cat="projek" data-title="Pembuatan Nextcloud" data-desc="Projek Nextcloud di atas Ubuntu." data-img="pembuatan nextcloud.png">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="pembuatan nextcloud.png" alt="Nextcloud" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Projek Nextcloud dengan Ubuntu</div>
+          </div>
+          <div class="gal-item reveal" data-cat="projek" data-title="Projek Konfigurasi Jaringan" data-desc="Konfigurasi jaringan labolatorium." data-img="projek konfigurasi jaringan.jpeg">
+            <span class="gal-type">PROJEK</span>
+            <img class="gal-photo" src="projek konfigurasi jaringan.jpeg" alt="Konfigurasi Jaringan" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Konfigurasi Jaringan</div>
+          </div>
+
+          <div class="gal-item reveal" data-cat="pengalaman" data-title="Pengalaman Pra-PKL" data-desc="Pengalaman PKL di industri jaringan." data-img="pemasangan  jaringan.png">
+            <span class="gal-type">PENGALAMAN</span>
+            <img class="gal-photo" src="pemasangan  jaringan.png" alt="Pengalaman Jaringan" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Pengalaman dengan Industri Jaringan</div>
+          </div>
+          <div class="gal-item reveal" data-cat="pengalaman" data-title="Pengalaman Dunia Jaringan" data-desc="Pengalaman dunia jaringan." data-img="Projek instalasi jaringan.jpeg">
+            <span class="gal-type">PENGALAMAN</span>
+            <img class="gal-photo" src="Projek instalasi jaringan.jpeg" alt="Pengalaman" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Pengalaman Selama Industri Jaringan</div>
+          </div>
+
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat Lomba Networking" data-desc="Sertifikat kejuaraan bidang jaringan." data-img="sertifikat lomba jaringan IDN.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="sertifikat lomba jaringan IDN.jpeg" alt="Sertifikat Lomba" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat Lomba Jaringan</div>
+          </div>
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat Pelatihan Docker" data-desc="Sertifikat pelatihan Docker." data-img="sertifikat docker.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="sertifikat docker.jpeg" alt="Sertifikat Docker" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat Pelatihan Docker</div>
+          </div>
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat Pelatihan Linux" data-desc="Sertifikat pelatihan Linux Adinusa." data-img="sertifikat linux.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="sertifikat linux.jpeg" alt="Sertifikat Linux" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat Pelatihan Linux</div>
+          </div>
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat Seminar IOT" data-desc="Sertifikat Seminar IOT untuk Industri Digital." data-img="seminar iot.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="seminar iot.jpeg" alt="Seminar IOT" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat Seminar IOT</div>
+          </div>
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat EJLS 2026" data-desc="Sertifikat kegiatan EJLS 2026." data-img="sertifikat ejls.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="sertifikat ejls.jpeg" alt="EJLS" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat EJLS</div>
+          </div>
+          <div class="gal-item reveal" data-cat="sertifikat" data-title="Sertifikat Olimpiade" data-desc="Sertifikat olimpiade akademik." data-img="sertifikat olimpiade.jpeg">
+            <span class="gal-type">SERTIFIKAT</span>
+            <img class="gal-photo" src="sertifikat olimpiade.jpeg" alt="Olimpiade" onload="this.closest('.gal-item').classList.add('has-photo')" onerror="this.style.display='none'">
+            <div class="gal-label">Sertifikat Olimpiade</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STATS ============ -->
+    <section class="section-pad" id="statistik" style="padding-top:0;">
+      <div class="container">
+        <div class="eyebrow">$ du -sh ./galeri</div>
+        <h2 class="section-title reveal">Dokumentasi Terkumpul</h2>
+        <p class="section-sub reveal">Total dokumentasi proyek, kegiatan, dan sertifikat.</p>
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🗂️</div><div class="stat-tag">PROJECT</div></div>
+            <div class="stat-num" data-count="6">0</div>
+            <div class="stat-lbl">Dokumentasi Projek</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic green">👷</div><div class="stat-tag">EXPERIENCE</div></div>
+            <div class="stat-num" data-count="2">0</div>
+            <div class="stat-lbl">Dokumentasi Pengalaman</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic amber">🏅</div><div class="stat-tag">CERTIFICATE</div></div>
+            <div class="stat-num" data-count="7">0</div>
+            <div class="stat-lbl">Dokumentasi Sertifikat</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="school-badge">TLKM</div>
+        <div>
+          <div class="school-name">SMK TELKOM SIDOARJO</div>
+          <div class="school-sub">Kompetensi Keahlian: Teknik Jaringan Akses Telekomunikasi</div>
+        </div>
+        <button class="back-top" id="backTop">↑ kembali ke atas</button>
+        <div class="copyright">© 2026 Farrel Al Farizi — Network &amp; Server Monitoring Dashboard</div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-box">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <img id="lbImage" src="" alt="">
+    <h4 id="lbTitle">Judul</h4>
+    <p id="lbDesc">Deskripsi</p>
+  </div>
+</div>
+
+<script src="main.js"></script>
+<script>
+/* ---------- counting animation ---------- */
+function initCounters(){
+  const nums = document.querySelectorAll('.stat-num[data-count]');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el=e.target, target=parseFloat(el.dataset.count), dec=parseInt(el.dataset.decimal||'0'), suffix=el.dataset.suffix||'';
+      const dur=1200, start=performance.now();
+      (function tick(now){ const p=Math.min(1,(now-start)/dur); const ease=1-Math.pow(1-p,3); el.textContent=(target*ease).toFixed(dec)+suffix; if(p<1) requestAnimationFrame(tick); })(start);
+      obs.unobserve(el);
+    });
+  },{threshold:0.5});
+  nums.forEach(n=>obs.observe(n));
+}
+initCounters();
+</script>
+</body>
+</html>

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Proyek &amp; Pengalaman — Farrel Al Farizi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grid-bg"></div>
+
+<div class="layout">
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar-head">
+      <div class="sidebar-logo">
+        <span class="dot"></span>
+        <div>root@farrel<small>Network &amp; Server Dashboard</small></div>
+      </div>
+    </div>
+    <nav class="sidebar-nav">
+      <div class="nav-label">Navigasi</div>
+      <a href="index.html"><span class="ic">🏠</span>Dashboard</a>
+      <a href="skills.html"><span class="ic">📊</span>Keahlian</a>
+      <a href="projects.html" class="active"><span class="ic">🗂️</span>Proyek</a>
+      <a href="gallery.html"><span class="ic">🖼️</span>Galeri</a>
+      <a href="contact.html"><span class="ic">✉️</span>Kontak</a>
+    </nav>
+    <div class="sidebar-foot">
+      <div class="status"><span class="dot-s"></span>SERVER ONLINE — 99.9%</div>
+    </div>
+  </aside>
+
+  <main class="main">
+
+    <div class="topbar">
+      <button class="menu-btn" id="menuBtn">☰</button>
+      <div class="crumb">farrel@portofolio:<b>~</b>$ <span>cat proyek.log</span></div>
+      <div class="spacer"></div>
+      <div class="live"><span class="blink"></span>LIVE MONITORING</div>
+    </div>
+
+    <!-- ============ STATS ============ -->
+    <section class="section-pad" id="statistik">
+      <div class="container">
+        <div class="eyebrow">$ uptime && df -h</div>
+        <h2 class="section-title reveal">Dashboard Proyek</h2>
+        <p class="section-sub reveal">Ringkasan capaian proyek jaringan, server, dan pengalaman yang telah dikerjakan.</p>
+
+        <div class="stat-grid">
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic">🔧</div><div class="stat-tag">PROJECT</div></div>
+            <div class="stat-num" data-count="6">0</div>
+            <div class="stat-lbl">Proyek Selesai</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic green">🏗️</div><div class="stat-tag">INSTALL</div></div>
+            <div class="stat-num" data-count="15" data-suffix="+">0</div>
+            <div class="stat-lbl">Konfigurasi Jaringan</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic amber">🏅</div><div class="stat-tag">AWARD</div></div>
+            <div class="stat-num" data-count="1">0</div>
+            <div class="stat-lbl">Juara Nasional</div>
+          </div>
+          <div class="stat-card reveal">
+            <div class="stat-top"><div class="stat-ic red">👥</div><div class="stat-tag">ORG</div></div>
+            <div class="stat-num" data-count="3">0</div>
+            <div class="stat-lbl">Organisasi Aktif</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ TIMELINE ============ -->
+    <section class="section-pad" id="pengalaman">
+      <div class="container">
+        <div class="eyebrow">$ tail -f pengalaman.log</div>
+        <h2 class="section-title reveal">Pengalaman &amp; Projek</h2>
+        <p class="section-sub reveal">Catatan aktivitas — dari praktik kerja lapangan hingga proyek jaringan mandiri.</p>
+
+        <div class="timeline">
+          <div class="tl-item reveal">
+            <div class="tl-meta">2024 — Projek</div>
+            <h4>Pembuatan Inovasi Lampu Otomatisasi</h4>
+            <p>Melakukan pembelajaran tentang inovasi lampu untuk rumah pintar berbasis otomatisasi.</p>
+            <div class="tl-tags"><span>ROBOT</span><span>Application</span><span>Installation</span></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-meta">2025 — PROYEK SEKOLAH</div>
+            <h4>Rancang Bangun Jaringan LAN Laboratorium Komputer</h4>
+            <p>Merancang dan menentukan jaringan dengan topologi area sekolah, mengembangkan VLAN dan server.</p>
+            <div class="tl-tags"><span>VLAN</span><span>Cisco Packet Tracer</span><span>Configuration</span></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-meta">2025 — PROYEK MANDIRI</div>
+            <h4>Server Monitoring Dashboard Cockpit</h4>
+            <p>Membangun sistem monitoring uptime dan resource server menggunakan Cockpit di atas Ubuntu Server.</p>
+            <div class="tl-tags"><span>Cockpit</span><span>Ubuntu Server</span><span>Automation</span></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-meta">2025 — SERTIFIKASI LOMBA</div>
+            <h4>Juara Harapan 1 Lomba Networking Tingkat Nasional</h4>
+            <p>Memenangi lomba dengan keahlian bidang jaringan Cisco dan konfigurasi.</p>
+            <div class="tl-tags"><span>LAN/WAN</span><span>Sertifikat</span></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-meta">2025 — PROYEK BIDANG PEMINATAN</div>
+            <h4>Pengembangan Jaringan MikroTik &amp; Server Ubuntu</h4>
+            <p>Proyek pembuatan rangkaian jaringan dan monitoring server untuk belajar troubleshooting serta instalasi network MikroTik &amp; Ubuntu.</p>
+            <div class="tl-tags"><span>MikroTik</span><span>Ubuntu</span></div>
+          </div>
+          <div class="tl-item reveal">
+            <div class="tl-meta">2025 — SEMINAR IOT UNTUK INDUSTRI</div>
+            <h4>Seminar Pengembangan Minat &amp; Pengetahuan</h4>
+            <p>Mengikuti dan mempelajari bidang pengembangan dunia robotik/otomatisasi di industri.</p>
+            <div class="tl-tags"><span>Seminar</span><span>IOT</span><span>Industry Technology</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container"><div class="divider"></div></div>
+
+    <!-- ============ ORGANISASI ============ -->
+    <section class="section-pad" id="organisasi">
+      <div class="container">
+        <div class="eyebrow">$ groups farrel</div>
+        <h2 class="section-title reveal">Pengalaman Organisasi</h2>
+        <p class="section-sub reveal">Keterlibatan di luar akademik — melatih kepemimpinan, kerja sama tim, dan koordinasi acara.</p>
+
+        <div class="org-grid">
+          <div class="org-card reveal">
+            <div class="org-image" id="orgImg1">
+              <img src="logo mpk.png" alt="MPK" onload="this.closest('.org-image').classList.add('has-photo')" onerror="this.style.display='none'">
+              <div class="org-img-placeholder"><b style="color:var(--text-dim)">mpk</b></div>
+            </div>
+            <div class="org-body">
+              <div class="org-head">
+                <div class="org-icon">⚖️</div>
+                <div><h4>Anggota Majelis Perwakilan Kelas (MPK)</h4><div class="org-period">2025 — 2026</div></div>
+              </div>
+              <p>Menjadi penengah antara siswa dengan OSIS untuk menyampaikan aspirasi dari siswa-siswi SMK Telkom Sidoarjo.</p>
+              <div class="tl-tags"><span>Kepemimpinan</span><span>Kerja Sama Tim</span></div>
+            </div>
+          </div>
+
+          <div class="org-card reveal">
+            <div class="org-image" id="orgImg2">
+              <img src="logo osis.png" alt="OSIS" onload="this.closest('.org-image').classList.add('has-photo')" onerror="this.style.display='none'">
+              <div class="org-img-placeholder"><b style="color:var(--text-dim)">osis</b></div>
+            </div>
+            <div class="org-body">
+              <div class="org-head">
+                <div class="org-icon">👥</div>
+                <div><h4>Anggota OSIS — Ketua Sie Keamanan &amp; Ketertiban</h4><div class="org-period">2025 — 2026</div></div>
+              </div>
+              <p>Bertanggung jawab atas amanah yang diemban dan melaksanakannya dengan sepenuh hati.</p>
+              <div class="tl-tags"><span>Leadership</span><span>Kerja Tim</span><span>Critical Thinking</span></div>
+            </div>
+          </div>
+
+          <div class="org-card reveal">
+            <div class="org-image" id="orgImg3">
+              <img src="logo komdis.png" alt="Komdis" onload="this.closest('.org-image').classList.add('has-photo')" onerror="this.style.display='none'">
+              <div class="org-img-placeholder"><b style="color:var(--text-dim)">komdis</b></div>
+            </div>
+            <div class="org-body">
+              <div class="org-head">
+                <div class="org-icon">🤝</div>
+                <div><h4>Ketua Komisi Disiplin — SMK Telkom Sidoarjo</h4><div class="org-period">2026</div></div>
+              </div>
+              <p>Mengatur dan melakukan koordinasi tim untuk organisasi yang lebih baik ke depannya.</p>
+              <div class="tl-tags"><span>Leadership</span><span>Responsibility</span><span>Berintegritas</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container footer-inner">
+        <div class="school-badge">TLKM</div>
+        <div>
+          <div class="school-name">SMK TELKOM SIDOARJO</div>
+          <div class="school-sub">Kompetensi Keahlian: Teknik Jaringan Akses Telekomunikasi</div>
+        </div>
+        <button class="back-top" id="backTop">↑ kembali ke atas</button>
+        <div class="copyright">© 2026 Farrel Al Farizi — Network &amp; Server Monitoring Dashboard</div>
+      </div>
+    </footer>
+
+  </main>
+</div>
+
+<script src="main.js"></script>
+<script>
+/* ---------- counting animation ---------- */
+function initCounters(){
+  const nums = document.querySelectorAll('.stat-num[data-count]');
+  const obs = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting) return;
+      const el=e.target, target=parseFloat(el.dataset.count), dec=parseInt(el.dataset.decimal||'0'), suffix=el.dataset.suffix||'';
+      const dur=1200, start=performance.now();
+      (function tick(now){ const p=Math.min(1,(now-start)/dur); const ease=1-Math.pow(1-p,3); el.textContent=(target*ease).toFixed(dec)+suffix; if(p<1) requestAnimationFrame(tick); })(start);
+      obs.unobserve(el);
+    });
+  },{threshold:0.5});
+  nums.forEach(n=>obs.observe(n));
+}
+initCounters();
+</script>
+</body>
+</html>
